@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital RCM Report</title>
+  <style>
+    :root{
+      --bg:#f6f8fa; --card:#ffffff; --accent:#004080; --muted:#666; --border:#e2e6ea;
+      --radius:10px; --pad:18px; --text:#222;
+    }
+    body{font-family:Inter, Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); margin:0}
+    .container{max-width:1200px; margin:28px auto; padding:24px}
+    h1{color:var(--accent); margin:0 0 18px}
+    h2, h3, h4, h5{margin:18px 0 8px; color:var(--accent); display: flex; align-items: center; gap: 8px;}
+    .card{background:var(--card); border-radius:var(--radius); box-shadow:0 6px 18px rgba(16,24,40,.04); padding:var(--pad); margin-bottom:20px}
+    table{width:100%; border-collapse:collapse; margin-top:8px; font-size:13px}
+    thead th{background:var(--accent); color:#fff; padding:10px; text-align:center}
+    th, td{border:1px solid var(--border); padding:8px; text-align:center}
+    td.left, th.left{ text-align:left }
+    .muted{color:var(--muted); font-size:13px}
+    .small{font-size:12px}
+    .spaced-section { margin-bottom: 24px; }
+    @media (max-width:900px){table{font-size:12px} thead th{font-size:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hospital RCM Report</h1>
+
+    <!-- 1-4. Overview -->
+    <div class="card">
+      <h2>Hospital Revenue Overview</h2>
+      
+      <!-- 1. Hospital Overall Revenue -->
+      <h3>Overall Revenue</h3>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th class="left">Total Net Revenue</th>
+              <td>$12,500,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4. Revenue by Location -->
+      <h3>Revenue by Location</h3>
+      <div>
+        <table>
+          <thead><tr><th class="left">Location</th><th>Revenue</th><th>Share of Total</th><th>Avg. per Claim</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Outpatient (OP Clinics)</td><td>$3,600,000</td><td>29%</td><td>$300</td></tr>
+            <tr><td class="left">Inpatient (IP & Operations)</td><td>$6,000,000</td><td>48%</td><td>$2,000</td></tr>
+            <tr><td class="left">Emergency Room (ER)</td><td>$2,900,000</td><td>23%</td><td>$500</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 2. Revenue by Specialty -->
+      <h3>Revenue by Specialty</h3>
+      <div>
+        <table>
+          <thead>
+            <tr><th class="left">Specialty</th><th>Revenue</th><th>Share of Total</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Cardiology</td><td>$2,500,000</td><td>20%</td></tr>
+            <tr><td class="left">Orthopedics</td><td>$2,000,000</td><td>16%</td></tr>
+            <tr><td class="left">Pediatrics</td><td>$1,200,000</td><td>10%</td></tr>
+            <tr><td class="left">General Surgery</td><td>$3,000,000</td><td>24%</td></tr>
+            <tr><td class="left">Radiology</td><td>$1,000,000</td><td>8%</td></tr>
+            <tr><td class="left">Other Specialties</td><td>$2,800,000</td><td>22%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 3. Revenue by Service Category -->
+      <h3>Revenue by Service Category</h3>
+      <div>
+        <table>
+          <thead><tr><th class="left">Service</th><th>Revenue</th><th>Share of Total</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Surgical Operations</td><td>$4,200,000</td><td>34%</td></tr>
+            <tr><td class="left">Labs</td><td>$1,500,000</td><td>12%</td></tr>
+            <tr><td class="left">Medicines</td><td>$2,000,000</td><td>16%</td></tr>
+            <tr><td class="left">Radiology</td><td>$1,800,000</td><td>14%</td></tr>
+            <tr><td class="left">Consultations</td><td>$2,300,000</td><td>18%</td></tr>
+            <tr><td class="left">Other Services</td><td>$700,000</td><td>6%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Outpatient section -->
+    <div class="card">
+      <h2>Outpatient (OP) Services</h2>
+      
+      <h3>Outpatient Revenue Breakdown</h3>
+      <!-- Overall Revenue -->
+      <h4>Overall Revenue</h4>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th class="left">Total Outpatient Net Revenue</th>
+              <td>$3,600,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Revenue by Specialty -->
+      <h4>Outpatient Revenue by Specialty</h4>
+      <div>
+        <table>
+          <thead>
+            <tr><th class="left">Specialty</th><th>Revenue</th><th>Share of Total</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Pediatrics</td><td>$1,000,000</td><td>28%</td></tr>
+            <tr><td class="left">Cardiology</td><td>$800,000</td><td>22%</td></tr>
+            <tr><td class="left">Orthopedics</td><td>$500,000</td><td>14%</td></tr>
+            <tr><td class="left">Radiology</td><td>$600,000</td><td>17%</td></tr>
+            <tr><td class="left">Other Specialties</td><td>$700,000</td><td>19%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Service Conversion Rate Table -->
+      <h4>Service Conversion Rate</h4>
+      <div>
+        <table>
+          <thead>
+            <tr><th class="left">Service</th><th>Conversion Rate</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Labs</td><td>85%</td></tr>
+            <tr><td class="left">Radiology</td><td>92%</td></tr>
+            <tr><td class="left">Medicines</td><td>98%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Revenue by Service Category -->
+      <h4>Outpatient Revenue by Service Category</h4>
+      <div>
+        <table>
+          <thead><tr><th class="left">Service</th><th>Revenue</th><th>Share of Total</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Consultations</td><td>$1,800,000</td><td>50%</td></tr>
+            <tr><td class="left">Labs</td><td>$700,000</td><td>19%</td></tr>
+            <tr><td class="left">Radiology</td><td>$600,000</td><td>17%</td></tr>
+            <tr><td class="left">Medicines</td><td>$300,000</td><td>8%</td></tr>
+            <tr><td class="left">Other Services</td><td>$200,000</td><td>6%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Outpatient Details -->
+      <h3>Outpatient Operational Details</h3>
+      
+      <!-- Visits -->
+      <h4>Visits</h4>
+      <div>
+        <table>
+          <thead><tr><th class="left">Total Outpatient Visits</th><th>Avg. per Claim</th></tr></thead>
+          <tbody><tr><td class="left">12,000</td><td>$300</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th class="left">Specialty</th><th>Visits</th><th>Share of Total</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Pediatrics</td><td>4,000</td><td>33%</td></tr>
+            <tr><td class="left">Cardiology</td><td>3,200</td><td>27%</td></tr>
+            <tr><td class="left">Orthopedics</td><td>1,500</td><td>12.5%</td></tr>
+            <tr><td class="left">Radiology</td><td>1,800</td><td>15%</td></tr>
+            <tr><td class="left">Other Specialties</td><td>1,500</td><td>12.5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slots and Utilization -->
+      <h4>Clinic Slots & Utilization</h4>
+      <div>
+        <table>
+          <thead><tr><th class="left">Total Slots Opened</th><th>Avg. Patients per Slot</th></tr></thead>
+          <tbody><tr><td class="left">1,500</td><td>8</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th class="left">Specialty</th><th>Slots</th><th>Avg. Patients per Slot</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Pediatrics</td><td>500</td><td>8</td></tr>
+            <tr><td class="left">Cardiology</td><td>400</td><td>8</td></tr>
+            <tr><td class="left">Orthopedics</td><td>200</td><td>7.5</td></tr>
+            <tr><td class="left">Radiology</td><td>200</td><td>9</td></tr>
+            <tr><td class="left">Other Specialties</td><td>200</td><td>7.5</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- No-Shows -->
+      <h4>Patient No-Shows</h4>
+      <div>
+        <table>
+          <thead><tr><th class="left">Total No-Shows</th><th>No-Show Ratio</th></tr></thead>
+          <tbody><tr><td class="left">1,200</td><td>10%</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th class="left">Specialty</th><th>No-Show Count</th><th>Share of Total No-Shows</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Pediatrics</td><td>300</td><td>25%</td></tr>
+            <tr><td class="left">Cardiology</td><td>400</td><td>33%</td></tr>
+            <tr><td class="left">Orthopedics</td><td>150</td><td>12.5%</td></tr>
+            <tr><td class="left">Radiology</td><td>200</td><td>17%</td></tr>
+            <tr><td class="left">Other Specialties</td><td>150</td><td>12.5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Visit Type -->
+      <h4>Visit Type Breakdown</h4>
+      <div>
+        <table>
+          <thead><tr><th class="left">Visit Type</th><th>Count</th><th>Share of Total Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">New Visit</td><td>3,600</td><td>30%</td></tr>
+            <tr><td class="left">Follow-up Visit</td><td>8,400</td><td>70%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th class="left">Specialty</th><th>New Visits</th><th>Follow-up Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Pediatrics</td><td>1,000</td><td>3,000</td></tr>
+            <tr><td class="left">Cardiology</td><td>1,200</td><td>2,000</td></tr>
+            <tr><td class="left">Orthopedics</td><td>600</td><td>900</td></tr>
+            <tr><td class="left">Radiology</td><td>500</td><td>1,300</td></tr>
+            <tr><td class="left">Other Specialties</td><td>300</td><td>1,200</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Overbooking -->
+      <h4>Overbooking</h4>
+      <div>
+        <table>
+          <thead><tr><th class="left">Total Overbookings</th><th>Overbooking Ratio</th></tr></thead>
+          <tbody><tr><td class="left">600</td><td>5%</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th class="left">Specialty</th><th>Overbooking Count</th><th>Share of Total Overbookings</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Pediatrics</td><td>150</td><td>25%</td></tr>
+            <tr><td class="left">Cardiology</td><td>200</td><td>33%</td></tr>
+            <tr><td class="left">Orthopedics</td><td>50</td><td>8%</td></tr>
+            <tr><td class="left">Radiology</td><td>100</td><td>17%</td></tr>
+            <tr><td class="left">Other Specialties</td><td>100</td><td>17%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Outpatient Staff Breakdown by Specialty -->
+      <h3>Outpatient Staff Breakdown by Specialty</h3>
+
+      <div class="spaced-section">
+        <h5>Pediatrics Staff</h5>
+        
+        <!-- Total Revenue -->
+        <h6>Total Revenue</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Total Revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Anne Green</td><td>$1,000,000</td></tr>
+            <tr><td class="left">Dr. Mark Chen</td><td>$800,000</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Service Conversion Rate -->
+        <h6>Service Conversion Rate</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab %</th><th>Rad %</th><th>Ph %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Anne Green</td><td>90%</td><td>92%</td><td>98%</td></tr>
+            <tr><td class="left">Dr. Mark Chen</td><td>82%</td><td>85%</td><td>95%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Outpatient Revenue by Service Category -->
+        <h6>Revenue by Service Category</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab Revenue</th><th>Rad Revenue</th><th>Ph Revenue</th><th>Service Revenue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Anne Green</td><td>$150,000</td><td>$100,000</td><td>$50,000</td><td>$50,000</td></tr>
+            <tr><td class="left">Dr. Mark Chen</td><td>$100,000</td><td>$80,000</td><td>$40,000</td><td>$30,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Visits -->
+        <h6>Visits</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Anne Green</td><td>2,500</td></tr>
+            <tr><td class="left">Dr. Mark Chen</td><td>1,500</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Clinic Slots & Utilization -->
+        <h6>Clinic Slots & Utilization</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Slots</th><th>Avg. Patients per Slot</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Anne Green</td><td>300</td><td>8.3</td></tr>
+            <tr><td class="left">Dr. Mark Chen</td><td>200</td><td>7.5</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Patient No-Shows -->
+        <h6>Patient No-Shows</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>No-Show Count</th><th>No-Show Ratio</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Anne Green</td><td>120</td><td>4.8%</td></tr>
+            <tr><td class="left">Dr. Mark Chen</td><td>180</td><td>12.0%</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Visit Type Breakdown -->
+        <h6>Visit Type Breakdown</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>New Visits</th><th>Follow-up Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Anne Green</td><td>700</td><td>1,800</td></tr>
+            <tr><td class="left">Dr. Mark Chen</td><td>300</td><td>1,200</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Overbooking -->
+        <h6>Overbooking</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Overbooking Count</th><th>Overbooking Ratio</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Anne Green</td><td>50</td><td>2.0%</td></tr>
+            <tr><td class="left">Dr. Mark Chen</td><td>100</td><td>6.7%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="spaced-section">
+        <h5>Cardiology Staff</h5>
+        
+        <!-- Total Revenue -->
+        <h6>Total Revenue</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Total Revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Jane Smith</td><td>$800,000</td></tr>
+            <tr><td class="left">Dr. Ali Khan</td><td>$600,000</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Service Conversion Rate -->
+        <h6>Service Conversion Rate</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab %</th><th>Rad %</th><th>Ph %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Jane Smith</td><td>85%</td><td>90%</td><td>96%</td></tr>
+            <tr><td class="left">Dr. Ali Khan</td><td>88%</td><td>89%</td><td>97%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Outpatient Revenue by Service Category -->
+        <h6>Revenue by Service Category</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab Revenue</th><th>Rad Revenue</th><th>Ph Revenue</th><th>Service Revenue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Jane Smith</td><td>$100,000</td><td>$80,000</td><td>$50,000</td><td>$50,000</td></tr>
+            <tr><td class="left">Dr. Ali Khan</td><td>$100,000</td><td>$70,000</td><td>$40,000</td><td>$40,000</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Visits -->
+        <h6>Visits</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Jane Smith</td><td>1,800</td></tr>
+            <tr><td class="left">Dr. Ali Khan</td><td>1,400</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Clinic Slots & Utilization -->
+        <h6>Clinic Slots & Utilization</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Slots</th><th>Avg. Patients per Slot</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Jane Smith</td><td>220</td><td>8.2</td></tr>
+            <tr><td class="left">Dr. Ali Khan</td><td>180</td><td>7.8</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Patient No-Shows -->
+        <h6>Patient No-Shows</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>No-Show Count</th><th>No-Show Ratio</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Jane Smith</td><td>150</td><td>8.3%</td></tr>
+            <tr><td class="left">Dr. Ali Khan</td><td>250</td><td>17.9%</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Visit Type Breakdown -->
+        <h6>Visit Type Breakdown</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>New Visits</th><th>Follow-up Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Jane Smith</td><td>800</td><td>1,000</td></tr>
+            <tr><td class="left">Dr. Ali Khan</td><td>400</td><td>1,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Overbooking -->
+        <h6>Overbooking</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Overbooking Count</th><th>Overbooking Ratio</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Jane Smith</td><td>100</td><td>5.6%</td></tr>
+            <tr><td class="left">Dr. Ali Khan</td><td>100</td><td>7.1%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="spaced-section">
+        <h5>Orthopedics Staff</h5>
+        
+        <!-- Total Revenue -->
+        <h6>Total Revenue</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Total Revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Jones</td><td>$500,000</td></tr>
+            <tr><td class="left">Dr. Karen Lee</td><td>$400,000</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Service Conversion Rate -->
+        <h6>Service Conversion Rate</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab %</th><th>Rad %</th><th>Ph %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Jones</td><td>75%</td><td>85%</td><td>90%</td></tr>
+            <tr><td class="left">Dr. Karen Lee</td><td>80%</td><td>88%</td><td>95%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Outpatient Revenue by Service Category -->
+        <h6>Revenue by Service Category</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab Revenue</th><th>Rad Revenue</th><th>Ph Revenue</th><th>Service Revenue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Jones</td><td>$50,000</td><td>$40,000</td><td>$20,000</td><td>$20,000</td></tr>
+            <tr><td class="left">Dr. Karen Lee</td><td>$100,000</td><td>$60,000</td><td>$30,000</td><td>$30,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Visits -->
+        <h6>Visits</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Jones</td><td>800</td></tr>
+            <tr><td class="left">Dr. Karen Lee</td><td>700</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Clinic Slots & Utilization -->
+        <h6>Clinic Slots & Utilization</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Slots</th><th>Avg. Patients per Slot</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Jones</td><td>100</td><td>8</td></tr>
+            <tr><td class="left">Dr. Karen Lee</td><td>100</td><td>7</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Patient No-Shows -->
+        <h6>Patient No-Shows</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>No-Show Count</th><th>No-Show Ratio</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Jones</td><td>80</td><td>10.0%</td></tr>
+            <tr><td class="left">Dr. Karen Lee</td><td>70</td><td>10.0%</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Visit Type Breakdown -->
+        <h6>Visit Type Breakdown</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>New Visits</th><th>Follow-up Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Jones</td><td>300</td><td>500</td></tr>
+            <tr><td class="left">Dr. Karen Lee</td><td>300</td><td>400</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Overbooking -->
+        <h6>Overbooking</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Overbooking Count</th><th>Overbooking Ratio</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Jones</td><td>25</td><td>3.1%</td></tr>
+            <tr><td class="left">Dr. Karen Lee</td><td>25</td><td>3.6%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="spaced-section">
+        <h5>Radiology Staff</h5>
+
+        <!-- Total Revenue -->
+        <h6>Total Revenue</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Total Revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Chris Evans</td><td>$600,000</td></tr>
+            <tr><td class="left">Dr. Laura Miller</td><td>$400,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Service Conversion Rate -->
+        <h6>Service Conversion Rate</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab %</th><th>Rad %</th><th>Ph %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Chris Evans</td><td>90%</td><td>95%</td><td>98%</td></tr>
+            <tr><td class="left">Dr. Laura Miller</td><td>85%</td><td>90%</td><td>96%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Outpatient Revenue by Service Category -->
+        <h6>Revenue by Service Category</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab Revenue</th><th>Rad Revenue</th><th>Ph Revenue</th><th>Service Revenue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Chris Evans</td><td>$50,000</td><td>$400,000</td><td>$30,000</td><td>$20,000</td></tr>
+            <tr><td class="left">Dr. Laura Miller</td><td>$30,000</td><td>$200,000</td><td>$20,000</td><td>$10,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Visits -->
+        <h6>Visits</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Chris Evans</td><td>1,200</td></tr>
+            <tr><td class="left">Dr. Laura Miller</td><td>600</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Clinic Slots & Utilization -->
+        <h6>Clinic Slots & Utilization</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Slots</th><th>Avg. Patients per Slot</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Chris Evans</td><td>130</td><td>9.2</td></tr>
+            <tr><td class="left">Dr. Laura Miller</td><td>70</td><td>8.6</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Patient No-Shows -->
+        <h6>Patient No-Shows</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>No-Show Count</th><th>No-Show Ratio</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Chris Evans</td><td>80</td><td>6.7%</td></tr>
+            <tr><td class="left">Dr. Laura Miller</td><td>120</td><td>20.0%</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Visit Type Breakdown -->
+        <h6>Visit Type Breakdown</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>New Visits</th><th>Follow-up Visits</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Chris Evans</td><td>200</td><td>1,000</td></tr>
+            <tr><td class="left">Dr. Laura Miller</td><td>300</td><td>300</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Overbooking -->
+        <h6>Overbooking</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Overbooking Count</th><th>Overbooking Ratio</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Chris Evans</td><td>50</td><td>4.2%</td></tr>
+            <tr><td class="left">Dr. Laura Miller</td><td>50</td><td>8.3%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <!-- END NEW Outpatient section -->
+
+    <!-- 5 & 6. Inpatient & Surgical Operations -->
+    <div class="card">
+      <h2>Inpatient & Surgical Operations</h2>
+      
+      <!-- Inpatient-specific Revenue Breakdown -->
+      <h3>Inpatient Revenue Breakdown</h3>
+      <!-- 5.1 Inpatient Overall Revenue -->
+      <h4>Overall Revenue</h4>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th class="left">Total Inpatient Net Revenue</th>
+              <td>$6,000,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 5.2 Inpatient Revenue by Specialty -->
+      <h4>Inpatient Revenue by Specialty</h4>
+      <div>
+        <table>
+          <thead>
+            <tr><th class="left">Specialty</th><th>Revenue</th><th>Share of Total</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Cardiology</td><td>$1,500,000</td><td>25%</td></tr>
+            <tr><td class="left">Orthopedics</td><td>$1,800,000</td><td>30%</td></tr>
+            <tr><td class="left">General Surgery</td><td>$2,100,000</td><td>35%</td></tr>
+            <tr><td class="left">Pediatrics</td><td>$300,000</td><td>5%</td></tr>
+            <tr><td class="left">Other Specialties</td><td>$300,000</td><td>5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 5.3 Inpatient Revenue by Service Category -->
+      <h4>Inpatient Revenue by Service Category</h4>
+      <div>
+        <table>
+          <thead><tr><th class="left">Service</th><th>Revenue</th><th>Share of Total</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Surgical Operations</td><td>$4,200,000</td><td>70%</td></tr>
+            <tr><td class="left">Labs</td><td>$500,000</td><td>8.3%</td></tr>
+            <tr><td class="left">Medicines</td><td>$500,000</td><td>8.3%</td></tr>
+            <tr><td class="left">Radiology</td><td>$400,000</td><td>6.7%</td></tr>
+            <tr><td class="left">Other Services</td><td>$400,000</td><td>6.7%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- 5. Inpatient (IP) -->
+      <h3>Inpatient (IP)</h3>
+      <div>
+        <!-- 5.1 First Admission Table -->
+        <h4>Admissions by Type</h4>
+        <table>
+          <thead>
+            <tr><th class="left">Admission Type</th><th>Count</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Inpatient (IP)</td><td>2,000</td></tr>
+            <tr><td class="left">Intensive Care Unit (ICU)</td><td>500</td></tr>
+            <tr><td class="left">Coronary Care Unit (CCU)</td><td>200</td></tr>
+            <tr><td class="left">Neonatal ICU (NICU)</td><td>150</td></tr>
+            <tr><td class="left">Pediatric ICU (PICU)</td><td>150</td></tr>
+          </tbody>
+        </table>
+
+        <!-- 5.2 Average Length of Stay -->
+        <h4>Average Length of Stay (Days)</h4>
+        <table>
+          <thead>
+            <tr><th class="left">Admission Type</th><th>Avg. Length of Stay</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Inpatient (IP)</td><td>4.5 days</td></tr>
+            <tr><td class="left">Intensive Care Unit (ICU)</td><td>7.2 days</td></tr>
+            <tr><td class="left">Coronary Care Unit (CCU)</td><td>5.1 days</td></tr>
+            <tr><td class="left">Neonatal ICU (NICU)</td><td>8.9 days</td></tr>
+            <tr><td class="left">Pediatric ICU (PICU)</td><td>6.4 days</td></tr>
+          </tbody>
+        </table>
+
+        <!-- 5.3 Ancillary Conversion Rate -->
+        <h4>Ancillary Conversion Rate</h4>
+        <table>
+          <thead>
+            <tr><th class="left">Service</th><th>Conversion Rate</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Labs</td><td>85%</td></tr>
+            <tr><td class="left">Radiology</td><td>78%</td></tr>
+            <tr><td class="left">Pharmacy</td><td>95%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- 5.4 Surgical Share of Total Admissions -->
+        <h4>Surgical Share of Total Admissions</h4>
+        <table>
+          <tbody>
+            <tr>
+              <th class="left">Total Admissions</th><td>3,000</td>
+            </tr>
+            <tr>
+              <th class="left">Surgical Operations Count</th><td>2,400</td>
+            </tr>
+            <tr>
+              <th class="left">Share of Surgical Operations</th><td>80%</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <!-- 6. Surgical Operations (updated classification design from 5.4 onward) -->
+      <h3>Surgical Operations</h3>
+      <div>
+        <!-- 6.1 Overall summary -->
+        <h4>Overall Summary</h4>
+        <div>
+          <table>
+            <tbody>
+              <tr><th class="left">Total Operations</th><td>2,400</td></tr>
+              <tr><th class="left">Total Revenue</th><td>$4,200,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 6.2 Classification (kept simple) -->
+        <h4>Classification of Operations</h4>
+        <div>
+          <table>
+            <thead>
+              <tr><th class="left">Class</th><th>Count</th><th>% of Total Count</th><th>Revenue</th><th>% of Total Rev</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="left">High</td><td>600</td><td>25%</td><td>$2,000,000</td><td>48%</td></tr>
+              <tr><td class="left">Moderate</td><td>1,200</td><td>50%</td><td>$1,600,000</td><td>38%</td></tr>
+              <tr><td class="left">Low</td><td>600</td><td>25%</td><td>$600,000</td><td>14%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 6.3 Operations by Specialty -->
+        <h4>Operations by Specialty</h4>
+        <div>
+          <table>
+            <thead><tr><th class="left">Specialty</th><th>Count</th><th>% of Total</th><th>Revenue</th><th>% of Total</th></tr></thead>
+            <tbody>
+              <tr><td class="left">General Surgery</td><td>800</td><td>33%</td><td>$1,600,000</td><td>38%</td></tr>
+              <tr><td class="left">Orthopedics</td><td>700</td><td>29%</td><td>$1,400,000</td><td>33%</td></tr>
+              <tr><td class="left">Cardiology</td><td>400</td><td>17%</td><td>$700,000</td><td>17%</td></tr>
+              <tr><td class="left">Other Specialties</td><td>500</td><td>21%</td><td>$500,000</td><td>12%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 6.4 Classification per Specialty (grouped headers High/Moderate/Low with subcolumns) -->
+        <h4>Classification per Specialty</h4>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="left">Specialty</th>
+                <th colspan="4" class="group-header">High</th>
+                <th colspan="4" class="group-header">Moderate</th>
+                <th colspan="4" class="group-header">Low</th>
+              </tr>
+              <tr>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="left">General Surgery</td><td>300</td><td>38%</td><td>$800,000</td><td>50%</td><td>350</td><td>44%</td><td>$600,000</td><td>38%</td><td>150</td><td>18%</td><td>$200,000</td><td>12%</td></tr>
+              <tr><td class="left">Orthopedics</td><td>200</td><td>29%</td><td>$600,000</td><td>43%</td><td>350</td><td>50%</td><td>$600,000</td><td>43%</td><td>150</td><td>21%</td><td>$200,000</td><td>14%</td></tr>
+              <tr><td class="left">Cardiology</td><td>50</td><td>12%</td><td>$200,000</td><td>29%</td><td>250</td><td>63%</td><td>$400,000</td><td>57%</td><td>100</td><td>25%</td><td>$100,000</td><td>14%</td></tr>
+              <tr><td class="left">Other Specialties</td><td>50</td><td>10%</td><td>$100,000</td><td>20%</td><td>250</td><td>50%</td><td>$200,000</td><td>40%</td><td>200</td><td>40%</td><td>$200,000</td><td>40%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 6.5 Classification per Physician (by Specialty) -- each specialty has its own physician table (no specialty totals) -->
+        <h4>Classification per Physician (by Specialty)</h4>
+        <div>
+          <h5>General Surgery</h5>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="left">Physician</th>
+                <th colspan="4" class="group-header">High</th>
+                <th colspan="4" class="group-header">Moderate</th>
+                <th colspan="4" class="group-header">Low</th>
+              </tr>
+              <tr>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="left">Dr. Smith</td><td>120</td><td>40%</td><td>$320,000</td><td>40%</td><td>100</td><td>33%</td><td>$171,429</td><td>33%</td><td>40</td><td>27%</td><td>$53,333</td><td>27%</td></tr>
+              <tr><td class="left">Dr. Johnson</td><td>90</td><td>36%</td><td>$300,000</td><td>36%</td><td>150</td><td>60%</td><td>$257,143</td><td>60%</td><td>10</td><td>4%</td><td>$13,333</td><td>4%</td></tr>
+              <tr><td class="left">Dr. Ahmed</td><td>90</td><td>30%</td><td>$240,000</td><td>30%</td><td>100</td><td>29%</td><td>$171,429</td><td>29%</td><td>100</td><td>67%</td><td>$133,333</td><td>67%</td></tr>
+            </tbody>
+          </table>
+
+          <h5>Orthopedics</h5>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="left">Physician</th>
+                <th colspan="4" class="group-header">High</th>
+                <th colspan="4" class="group-header">Moderate</th>
+                <th colspan="4" class="group-header">Low</th>
+              </tr>
+              <tr>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="left">Dr. Lee</td><td>80</td><td>40%</td><td>$240,000</td><td>40%</td><td>100</td><td>50%</td><td>$171,429</td><td>50%</td><td>20</td><td>10%</td><td>$26,667</td><td>10%</td></tr>
+              <tr><td class="left">Dr. Patel</td><td>70</td><td>35%</td><td>$210,000</td><td>35%</td><td>150</td><td>60%</td><td>$257,143</td><td>60%</td><td>10</td><td>5%</td><td>$13,333</td><td>5%</td></tr>
+              <tr><td class="left">Dr. Khan</td><td>50</td><td>25%</td><td>$150,000</td><td>25%</td><td>100</td><td>29%</td><td>$171,429</td><td>29%</td><td>120</td><td>80%</td><td>$160,000</td><td>80%</td></tr>
+            </tbody>
+          </table>
+
+          <h5>Cardiology</h5>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="left">Physician</th>
+                <th colspan="4" class="group-header">High</th>
+                <th colspan="4" class="group-header">Moderate</th>
+                <th colspan="4" class="group-header">Low</th>
+              </tr>
+              <tr>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="left">Dr. Brown</td><td>20</td><td>20%</td><td>$100,000</td><td>25%</td><td>70</td><td>70%</td><td>$250,000</td><td>63%</td><td>10</td><td>10%</td><td>$50,000</td><td>12%</td></tr>
+              <tr><td class="left">Dr. Davis</td><td>30</td><td>15%</td><td>$100,000</td><td>33%</td><td>180</td><td>75%</td><td>$150,000</td><td>50%</td><td>30</td><td>10%</td><td>$50,000</td><td>17%</td></tr>
+              <tr><td class="left">Dr. Miller</td><td>0</td><td>0%</td><td>$0</td><td>0%</td><td>60</td><td>24%</td><td>$96,000</td><td>24%</td><td>50</td><td>50%</td><td>$50,000</td><td>50%</td></tr>
+            </tbody>
+          </table>
+
+          <h5>Pediatrics</h5>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="left">Physician</th>
+                <th colspan="4" class="group-header">High</th>
+                <th colspan="4" class="group-header">Moderate</th>
+                <th colspan="4" class="group-header">Low</th>
+              </tr>
+              <tr>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+                <th>Count</th><th>%</th><th>Revenue</th><th>%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="left">Dr. White</td><td>20</td><td>20%</td><td>$50,000</td><td>20%</td><td>50</td><td>50%</td><td>$100,000</td><td>50%</td><td>30</td><td>30%</td><td>$50,000</td><td>30%</td></tr>
+              <tr><td class="left">Dr. Black</td><td>30</td><td>15%</td><td>$50,000</td><td>25%</td><td>150</td><td>60%</td><td>$100,000</td><td>50%</td><td>50</td><td>20%</td><td>$50,000</td><td>25%</td></tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- Emergency (ER) section -->
+    <div class="card">
+      <h2>Emergency Room (ER) Services</h2>
+
+      <h3>ER Revenue Breakdown</h3>
+      <!-- Overall Revenue -->
+      <h4>Overall Revenue</h4>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th class="left">Total Emergency Room Net Revenue</th>
+              <td>$2,900,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Revenue by Service Category -->
+      <h4>ER Revenue by Service Category</h4>
+      <div>
+        <table>
+          <thead>
+            <tr><th class="left">Service</th><th>Revenue</th><th>Share of Total</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Labs</td><td>$800,000</td><td>28%</td></tr>
+            <tr><td class="left">Radiology</td><td>$900,000</td><td>31%</td></tr>
+            <tr><td class="left">Medicines</td><td>$500,000</td><td>17%</td></tr>
+            <tr><td class="left">Services</td><td>$700,000</td><td>24%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Revenue by Specialty -->
+      <h4>ER Revenue by Specialty</h4>
+      <div>
+        <table>
+          <thead>
+            <tr><th class="left">Specialty</th><th>Revenue</th><th>Share of Total</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Trauma</td><td>$1,200,000</td><td>41%</td></tr>
+            <tr><td class="left">Cardiology</td><td>$700,000</td><td>24%</td></tr>
+            <tr><td class="left">Orthopedics</td><td>$500,000</td><td>17%</td></tr>
+            <tr><td class="left">General Medicine</td><td>$500,000</td><td>17%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ER Staff Breakdown by Specialty -->
+      <h3>ER Staff Breakdown by Specialty</h3>
+
+      <div class="spaced-section">
+        <h5>Trauma Staff</h5>
+        
+        <!-- Total Revenue -->
+        <h6>Revenue per Staff</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Total Revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Emily White</td><td>$650,000</td></tr>
+            <tr><td class="left">Dr. John Baker</td><td>$550,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Service Conversion Rate -->
+        <h6>Conversion Rate</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab %</th><th>Rad %</th><th>Ph %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Emily White</td><td>95%</td><td>98%</td><td>99%</td></tr>
+            <tr><td class="left">Dr. John Baker</td><td>92%</td><td>95%</td><td>98%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Revenue by Service Category -->
+        <h6>Revenue by Service</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab Revenue</th><th>Rad Revenue</th><th>Ph Revenue</th><th>Services Revenue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Emily White</td><td>$200,000</td><td>$250,000</td><td>$100,000</td><td>$100,000</td></tr>
+            <tr><td class="left">Dr. John Baker</td><td>$150,000</td><td>$200,000</td><td>$80,000</td><td>$120,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="spaced-section">
+        <h5>Cardiology Staff</h5>
+        
+        <!-- Total Revenue -->
+        <h6>Revenue per Staff</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Total Revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. David Chen</td><td>$400,000</td></tr>
+            <tr><td class="left">Dr. Maria Rodriguez</td><td>$300,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Service Conversion Rate -->
+        <h6>Conversion Rate</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab %</th><th>Rad %</th><th>Ph %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. David Chen</td><td>88%</td><td>90%</td><td>95%</td></tr>
+            <tr><td class="left">Dr. Maria Rodriguez</td><td>85%</td><td>88%</td><td>92%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Revenue by Service Category -->
+        <h6>Revenue by Service</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab Revenue</th><th>Rad Revenue</th><th>Ph Revenue</th><th>Services Revenue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. David Chen</td><td>$150,000</td><td>$120,000</td><td>$50,000</td><td>$80,000</td></tr>
+            <tr><td class="left">Dr. Maria Rodriguez</td><td>$100,000</td><td>$90,000</td><td>$40,000</td><td>$70,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="spaced-section">
+        <h5>Orthopedics Staff</h5>
+        
+        <!-- Total Revenue -->
+        <h6>Revenue per Staff</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Total Revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. James Wilson</td><td>$300,000</td></tr>
+            <tr><td class="left">Dr. Lisa Green</td><td>$200,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Service Conversion Rate -->
+        <h6>Conversion Rate</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab %</th><th>Rad %</th><th>Ph %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. James Wilson</td><td>80%</td><td>85%</td><td>90%</td></tr>
+            <tr><td class="left">Dr. Lisa Green</td><td>75%</td><td>80%</td><td>88%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Revenue by Service Category -->
+        <h6>Revenue by Service</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab Revenue</th><th>Rad Revenue</th><th>Ph Revenue</th><th>Services Revenue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. James Wilson</td><td>$100,000</td><td>$80,000</td><td>$30,000</td><td>$90,000</td></tr>
+            <tr><td class="left">Dr. Lisa Green</td><td>$60,000</td><td>$50,000</td><td>$25,000</td><td>$65,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="spaced-section">
+        <h5>General Medicine Staff</h5>
+        
+        <!-- Total Revenue -->
+        <h6>Revenue per Staff</h6>
+        <table>
+          <thead><tr><th class="left">Staff</th><th>Total Revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Brown</td><td>$350,000</td></tr>
+            <tr><td class="left">Dr. Jessica Lee</td><td>$150,000</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Service Conversion Rate -->
+        <h6>Conversion Rate</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab %</th><th>Rad %</th><th>Ph %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Brown</td><td>70%</td><td>80%</td><td>85%</td></tr>
+            <tr><td class="left">Dr. Jessica Lee</td><td>65%</td><td>75%</td><td>82%</td></tr>
+          </tbody>
+        </table>
+        
+        <!-- Revenue by Service Category -->
+        <h6>Revenue by Service</h6>
+        <table>
+          <thead>
+            <tr><th class="left">Staff</th><th>Lab Revenue</th><th>Rad Revenue</th><th>Ph Revenue</th><th>Services Revenue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="left">Dr. Robert Brown</td><td>$120,000</td><td>$100,000</td><td>$40,000</td><td>$90,000</td></tr>
+            <tr><td class="left">Dr. Jessica Lee</td><td>$50,000</td><td>$40,000</td><td>$15,000</td><td>$45,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card muted small">
+      <div>* All numbers are sample/assumed for layout purposes. To make this live, provide your export (CSV/Excel) and I will map fields into these tables or convert this to interactive charts.</div>
+    </div>
+
+  </div>
+</body>
+</html>
